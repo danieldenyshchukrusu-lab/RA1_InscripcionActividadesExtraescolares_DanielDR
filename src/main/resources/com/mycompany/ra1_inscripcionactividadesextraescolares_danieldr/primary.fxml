@@ -74,17 +74,17 @@
                </padding>
             </Label>
             <TextField fx:id="nombre" maxWidth="265.0" prefWidth="265.0" style="-fx-border-color: #705c40; -fx-border-radius: 5; -fx-background-radius: 5;" GridPane.columnIndex="1" />
+            <TextField fx:id="apellidos" maxWidth="265.0" prefWidth="265.0" style="-fx-border-color: #705c40; -fx-border-radius: 5; -fx-background-radius: 5;" GridPane.columnIndex="3">
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+            </TextField>
             <TextField fx:id="email" maxWidth="265.0" prefWidth="265.0" style="-fx-border-color: #705c40; -fx-border-radius: 5; -fx-background-radius: 5;" GridPane.columnIndex="1" GridPane.rowIndex="1" />
             <PasswordField fx:id="codfamilia" maxWidth="265.0" prefWidth="265.0" style="-fx-border-color: #705c40; -fx-border-radius: 5; -fx-background-radius: 5;" GridPane.columnIndex="3" GridPane.rowIndex="1">
                <GridPane.margin>
                   <Insets right="20.0" />
                </GridPane.margin>
             </PasswordField>
-            <TextField fx:id="apellidos" alignment="CENTER" maxWidth="265.0" prefWidth="265.0" style="-fx-border-color: #705c40; -fx-border-radius: 5; -fx-background-radius: 5;" GridPane.columnIndex="3">
-               <GridPane.margin>
-                  <Insets />
-               </GridPane.margin>
-            </TextField>
          </children>
       </GridPane>
       <HBox prefHeight="26.0" prefWidth="863.0">
@@ -111,12 +111,12 @@
       </CheckBox>
       <HBox prefHeight="81.0" prefWidth="863.0">
          <children>
-            <Button fx:id="inscribir" mnemonicParsing="false" prefHeight="40.0" prefWidth="140.0" style="-fx-background-color: #B85042; -fx-border-radius: 5; -fx-font-weight: bold;" text="Inscribir" textFill="WHITE">
+            <Button fx:id="inscribir" mnemonicParsing="false" onAction="#inscribirse" prefHeight="40.0" prefWidth="140.0" style="-fx-background-color: #B85042; -fx-border-radius: 5; -fx-font-weight: bold;" text="Inscribir" textFill="WHITE">
                <HBox.margin>
                   <Insets left="10.0" top="8.0" />
                </HBox.margin>
             </Button>
-            <Button fx:id="vaciar" mnemonicParsing="false" onAction="#vaciartodo" prefHeight="40.0" prefWidth="140.0" style="-fx-background-color: #FFFFFF; -fx-border-color: #AAAAAA; -fx-border-radius: 5; -fx-font-weight: bold;" text="Vaciar" textFill="#797777">
+            <Button fx:id="vaciar" mnemonicParsing="false" prefHeight="40.0" prefWidth="140.0" style="-fx-background-color: #FFFFFF; -fx-border-color: #AAAAAA; -fx-border-radius: 5; -fx-font-weight: bold;" text="Vaciar" textFill="#797777">
                <HBox.margin>
                   <Insets left="20.0" top="8.0" />
                </HBox.margin>

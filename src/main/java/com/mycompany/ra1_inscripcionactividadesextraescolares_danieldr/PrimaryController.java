@@ -3,6 +3,7 @@ package com.mycompany.ra1_inscripcionactividadesextraescolares_danieldr;
 import java.io.IOException;
 import javafx.fxml.FXML;
 import javafx.scene.control.Alert;
+import javafx.scene.control.Button;
 import javafx.scene.control.CheckBox;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.PasswordField;
@@ -11,6 +12,9 @@ import javafx.scene.control.TextField;
 public class PrimaryController {
 
     int contador = 0;
+    
+    @FXML 
+    private Button vaciar;
     
     @FXML
     private TextField nombre;
@@ -45,7 +49,8 @@ public class PrimaryController {
             actividad.getItems().addAll("Robótica","Ajedrez","Pintura","Idiomas");
             contador++;
         }
-            actividad.setValue(null);
+        vaciar.setOnAction(evento -> vaciartodo()); //Esto se pone si no quieres poner un OnAction dentro del SceneBuilder en algun boton o algo. Como en este caso para nosotros el boton de vaciar.
+        actividad.setValue(null);
     }
     
     @FXML
